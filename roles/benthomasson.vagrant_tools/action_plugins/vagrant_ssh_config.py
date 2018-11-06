@@ -12,6 +12,6 @@ class ActionModule(ActionBase):
             task_vars = dict()
         result = super(ActionModule, self).run(tmp, task_vars)
         output_file = self._task.args.get('output', None)
-        with open(output_file, 'w') as f:
+        with open(output_file, 'wb') as f:
             f.write(subprocess.check_output('vagrant ssh-config', shell=True))
         return result
