@@ -4,3 +4,7 @@
 /ssh-config
 key
 key.pub
+/private_data_dir/artifacts
+/private_data_dir/inventory
+hosts
+hosts2

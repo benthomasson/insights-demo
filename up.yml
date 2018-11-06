@@ -12,3 +12,7 @@
         data: topology.yml
         ssh_config: ssh-config
         output: hosts
+    - convert_ssh_config_to_ansible_inventory3:
+        data: topology.yml
+        ssh_config: ssh-config
+        output: hosts2
