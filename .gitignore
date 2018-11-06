@@ -2,3 +2,5 @@
 *.pyc
 *.retry
 /ssh-config
+key
+key.pub

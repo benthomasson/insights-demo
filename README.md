@@ -8,3 +8,4 @@
 # Start:
 
     ansible-playbook -i localhost -vvvv up.yml
+    ansible-playbook -i hosts key.yml 

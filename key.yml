@@ -1,0 +1,10 @@
+---
+- name: Add machine credentials
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: Add ssh pub key
+    authorized_key:
+        user: vagrant
+        state: present
+        key: "{{ lookup('file', lookup('env','HOME') + '/git/insights-demo/' + 'key.pub') }}"

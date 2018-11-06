@@ -1,5 +1,6 @@
 devices:
-- groups: []
+- groups:
+  - Group1
   id: 1
   interfaces: []
   name: Host1
@@ -7,7 +8,8 @@ devices:
   type: host
   x: 433
   y: 231
-- groups: []
+- groups:
+  - Group1
   id: 2
   interfaces: []
   name: Host2
@@ -15,7 +17,8 @@ devices:
   type: host
   x: 435
   y: 389
-- groups: []
+- groups:
+  - Group1
   id: 3
   interfaces: []
   name: Host3
@@ -23,7 +26,8 @@ devices:
   type: host
   x: 434
   y: 546
-- groups: []
+- groups:
+  - Group1
   id: 4
   interfaces: []
   name: Host4
@@ -31,7 +35,22 @@ devices:
   type: host
   x: 434
   y: 711
-groups: []
+groups:
+- group_id: 10
+  group_type: group
+  id: 1
+  inventory_group_id: 0
+  members:
+  - Host1
+  - Host2
+  - Host3
+  - Host4
+  name: Group1
+  topology_id: 28
+  x1: 236
+  x2: 640
+  y1: 130
+  y2: 835
 links: []
 name: topology
 streams: []
