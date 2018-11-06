@@ -1,0 +1,38 @@
+devices:
+- groups: []
+  id: 1
+  interfaces: []
+  name: Host1
+  processes: []
+  type: host
+  x: 433
+  y: 231
+- groups: []
+  id: 2
+  interfaces: []
+  name: Host2
+  processes: []
+  type: host
+  x: 435
+  y: 389
+- groups: []
+  id: 3
+  interfaces: []
+  name: Host3
+  processes: []
+  type: host
+  x: 434
+  y: 546
+- groups: []
+  id: 4
+  interfaces: []
+  name: Host4
+  processes: []
+  type: host
+  x: 434
+  y: 711
+groups: []
+links: []
+name: topology
+streams: []
+topology_id: 28
