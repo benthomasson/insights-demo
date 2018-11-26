@@ -20,3 +20,13 @@
     ssh-add key
     ansible-playbook -i hosts key.yml
     ansible-runner -m ping --hosts all --inventory ./hosts2 run private_data_dir
+
+# Fix hostname
+    ansible-playbook -i hosts host.yml
+
+# Enable subscription manager on each host
+    subscription-manager register --auto-attach
+
+# Install insights
+    ansible-playbook -i hosts install-insights.yml
+

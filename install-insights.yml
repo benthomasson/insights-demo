@@ -1,0 +1,9 @@
+- hosts: all
+  become: yes
+  tasks:
+    - name: Install Red Hat Access Insights Client
+      yum: name={{ item }} state=present
+      with_items:
+          - redhat-access-insights
+    - command: insights-client --register
+
