@@ -30,3 +30,5 @@
 # Install insights
     ansible-playbook -i hosts install-insights.yml
 
+
+
