@@ -1,0 +1,12 @@
+- hosts: all
+  become: yes
+  tasks:
+    - copy:
+        src: d3da0adf-c7f5-42ac-a613-4139d8c9ee45_2019-04-23-000003+0000.tar.gz
+        dest: /d3da0adf-c7f5-42ac-a613-4139d8c9ee45_2019-04-23-000003+0000.tar.gz
+        owner: root
+        group: root
+        mode: 0644
+    - name: Install Red Hat Access Insights Client
+      command: insights-client --content-type application/vnd.redhat.tower.analytics+tgz --payload /d3da0adf-c7f5-42ac-a613-4139d8c9ee45_2019-04-23-000003+0000.tar.gz
+
