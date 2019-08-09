@@ -5,5 +5,11 @@
       yum: name={{ item }} state=present
       with_items:
           - redhat-access-insights
+    - copy:
+        src: insights-client.conf
+        dest: /etc/insights-client/insights-client.conf
+        owner: root
+        group: root
+        mode: 0600
     - command: insights-client --register
 
